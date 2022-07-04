@@ -1,0 +1,323 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;/*base*/
+    line-height: 20px;
+
+}
+header{
+    background-color: #2e64a1;/*# rgb-rgba*/
+    padding: 16px 0;/*1rem 0*/
+   
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+
+}
+ nav{
+    background-color: #6da9da;
+    /* margin-top: 40px; */
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+nav ul li{
+    flex-grow: 1;/*La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex),
+    en su dirección principal.*/
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: rgba(0,0,0, 0.3);
+}
+footer{
+    background-color: #ccc;
+    clear: both;/*hace que el elemento caiga por debajo de cualquier elemento flotante que lo preceda en el documento. 
+    También puede utilizar clear:left o clear:right para que se sitúe por debajo sólo de los elementos que han sido 
+    flotados a la izquierda o a la derecha.*/
+    color: #333;
+    text-align: center;
+    padding:40px 0; /*3rem 0*/
+    margin-top: 20px;
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+.holder{
+    max-width: 960px;
+    margin:0 auto;
+}
+.holder div img{
+    margin-top: 20px;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+/*inicio home*/
+
+.homeimg img{
+    max-width: 100%;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.testimonios{
+    width: 25%;
+    /* background-color: yellow; */
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p{
+    font-size: 20px;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight:bold ;
+    font-style: italic; 
+    font-size: 22px;
+    /* background-color: yellow; */
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    /* background-color: lightcoral; */
+    display: block;
+    margin: 12px 0;
+
+
+}
+/*fin home*/
+
+/*Inicio nosotros*/
+
+.historia p{
+    font-size: 12px;/*0.7rem*/
+    
+}
+
+.personas{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.persona{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+}
+
+.persona h5,
+
+.persona h6{
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1;
+}
+
+.persona h5{
+    font-size:14px ;
+    margin-top: 5px; 
+
+}
+
+.persona h6{
+    color: #666;
+    font-size: 10px;
+
+}
+/*fin de nosotros*/
+/*Inicio de servicios*/
+
+.servicio{
+    border: 1px solid #ccc ;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+.servicio .info h4 {
+    color: #2e64a1 ;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom:1px dashed #2e64a1;
+    padding-bottom: 10px;
+}
+
+.servicio .info p{
+    font-size: 13px;
+    /*line-height: 19px;*/
+}
+
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width:225px ;
+}
+.servicio:nth-child(even){
+flex-direction: row-reverse; 
+}
+/*fin de servicios*/
+/*înicio de galeria*/
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.imagenes img{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 18%;
+    /* display: inline-block;
+    /* max-width:225px ; */
+    /*justify-content: space-around; */
+    /* width: 18%; */
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+/* .imagenes img:nth-child(5n+1){
+    border: 1px solid rgb(185, 13, 13) ;
+
+}
+.imagenes img:nth-child(3){
+    border: 1px solid #43e2f0;
+    background-color: #43e2f0;
+    /* padding: 0; 
+}*/
+
+/* .imagenes img:nth-child(6){
+    border: 1px solid rgb(185, 13, 13);
+} */
+/*fin galeria*/
+/*inicia contacto*/
+
+.contacto{
+    display: flex;
+    gap: 24px; 
+    margin-top: 15px; 
+    /* background-color: orange; */
+}
+.contacto div{
+    width:100%;
+    /* background-color: yellow;  */
+   
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+    display:flex
+}
+.formulario p label {
+    min-width: 80px;
+    /* background-color: yellow; */
+}
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario p textarea{
+    height: 150px;
+    resize: none;
+}
+.formulario p:nth-child(4){
+    align-items: flex-start;
+}
+.formulario input[type="submit"]{
+    background-color: #6da9da;
+    box-shadow: 0 0 10px rgb(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 80px;
+    cursor: pointer;
+
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+/*fin de contacto*/
+/*responsive*/
+@media screen and (max-width:550px){
+
+    nav{
+        overflow: scroll;/*provisorio*/
+        background-color: green;
+    }
+    .columnas{
+        flex-direction: column;
+        /* background-color: orange;*/
+    } 
+    .bienvenidos,
+    .testimonios{
+        width: 100%;
+    }
+    .holder{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+}

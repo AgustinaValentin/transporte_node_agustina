@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+    res.render( 'nosotros' ,{
+      isNosotros: true
+    });//vamos a necesitar en view/nosotros.hbs
+  });
 
 module.exports = router;

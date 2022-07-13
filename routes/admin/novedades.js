@@ -48,4 +48,16 @@ await novedadesModel.deleteNovedadByID(id);
     res.redirect('/admin/novedades');
 })
 
+/*vista modificar (form) + los datos de campo para modificar*/
+
+router.get ('/modificar/:id', async(req,res,next)=>{
+  var id= req.params.id;
+  var novedad= await novedadesModel.getNovedadesByID(id);
+     res.render('admin/modificar',{
+      layout:'admin/layout',
+      novedad
+     })
+ })
+
+
 module.exports = router;
